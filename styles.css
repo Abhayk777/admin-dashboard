@@ -19,7 +19,7 @@
 }
 
 .sidebar{
-    background-color:aqua;
+    background-color: #2AA5DC;
     grid-row: 1/3;
     grid-column: 1/2;
 }
@@ -51,4 +51,27 @@
   color: black;
   text-align: center;
 }
+.btn{
+    background-color: #2AA5DC;
+    box-sizing: border-box;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    border: none;
+    padding: 5px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
+.logo-img img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
