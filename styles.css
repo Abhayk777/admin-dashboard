@@ -27,15 +27,55 @@
     gap: 5px;
 }
 
+
+
 input{
     padding: 5px;
-    width: 80%;
+    flex: 1;
     border-radius: 15px;
     border: none;
     background-color: lightgray;
     color: black;
     font-size: 15px;
+    transition: width 0.3s;
 }
+
+.magnifier{
+    cursor: pointer;
+    color: black;
+}
+
+.mic-icon{
+    color: black;
+    transition: opacity 0.3s;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+}
+/* javascript */
+.search.active{
+    width: 50px;
+    display: flex;
+}
+
+.active .input{
+    width: 0;
+}
+
+.active .mic-icon{
+    width: 0;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+
+
 .header .lower{
     display: grid;
     grid-template-columns: 80px 1fr 390px;
