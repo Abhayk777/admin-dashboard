@@ -78,6 +78,62 @@ ul{
 .content{
     grid-column: 2/3;
     grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    padding: 25px 20px;
+}
+
+.content .project{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.content .articles{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(251px,1fr);
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.articles .card{
+    border-left: 8px solid #F0B429;
+    padding:20px;
+}
+
+.card-icon{
+    display: flex;
+    justify-content: flex-end;
+    gap:15px;
+}
+
+.content .right{
+    display: grid;
+    gap: 40px;
+}
+
+.announcements{
+    display: grid;
+    gap: 10px;
+}
+
+.announcements .card{
+    display: grid;
+    gap: 20px;
+    padding: 25px 15px 25px;
+    
+}
+
+.trending{
+    display: grid;
+    gap: 10px;
+}
+
+.trending .logo{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    padding: 20px;
 }
 
 .content div {
@@ -93,16 +149,7 @@ ul{
   text-align: center;
   border-radius: 10px;
 }
-.content .Acard {
-  background-color: white;
-  color: black;
-  text-align: center;
-}
-.content .Tcard {
-  background-color: white;
-  color: black;
-  text-align: center;
-}
+
 .btn{
     background-color: #2AA5DC;
     box-sizing: border-box;
