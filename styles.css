@@ -86,7 +86,6 @@ ul{
 
 .content .project{
     grid-column: 1/2;
-    grid-row: 1/3;
 }
 .content .articles{
     display: grid;
@@ -98,7 +97,10 @@ ul{
 
 .articles .card{
     border-left: 8px solid #F0B429;
-    padding:20px;
+    padding:50px 20px 0px;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    gap: 20px;
 }
 
 .card-icon{
@@ -109,7 +111,9 @@ ul{
 
 .content .right{
     display: grid;
-    gap: 40px;
+    gap: 20px;
+    align-content: start;
+    grid-template-rows: auto 1fr;
 }
 
 .announcements{
@@ -121,17 +125,23 @@ ul{
     display: grid;
     gap: 20px;
     padding: 25px 15px 25px;
-    
+}
+
+.announcements .card div:not(:last-child){
+    box-sizing: border-box;
+    padding:10px;
+    border-bottom: 1px solid lightgray;
 }
 
 .trending{
     display: grid;
     gap: 10px;
+    align-content: start;
 }
 
 .trending .logo{
     display: grid;
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 60px 1fr;
     align-items: center;
     padding: 20px;
 }
@@ -146,7 +156,7 @@ ul{
 .content .card {
   background-color: white;
   color: black;
-  text-align: center;
+  text-align: left;
   border-radius: 10px;
 }
 
@@ -173,4 +183,8 @@ ul{
     height: 70px;
     border-radius: 50%;
     object-fit: cover;
+}
+p{
+    font-size: 15px;
+    color: gray;
 }
